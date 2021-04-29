@@ -12,7 +12,17 @@ body{
       background-position: center;
 
     color: rgba(228, 228, 228, 0.932);
+
+    overflow-x: hidden;
     
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  overflow-x: hidden;
 }
 
 
@@ -20,11 +30,14 @@ input[type="text"],  input[type="number"] {
     background-color: transparent;
     border: 1px solid rgba(223, 60, 87, 0.904);
     border-radius: 0;
+    color: rgba(228, 228, 228, 0.932);
+
 }
 
 input[type="text"]:focus,  input[type="number"]:focus{
     background-color: rgba(223, 60, 87, 0.116);
-    outline: none;
+        color: rgba(228, 228, 228, 0.932);
+
 } 
 
 @media (min-width: 992px) { 
@@ -32,3 +45,20 @@ input[type="text"]:focus,  input[type="number"]:focus{
         height: 100vh;
     }
  }
+
+ canvas{ 
+  display: block;
+}
+#particles-container{ 
+  margin: 0;
+  padding: 0;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+}
+/* Image by Patrick Fore on Unsplash */
