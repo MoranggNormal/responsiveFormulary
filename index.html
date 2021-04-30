@@ -15,18 +15,24 @@
     <div id="particles-container"></div>
     <main class="container">
 
-        <form action="#">
+        <form action="#" class="needs-validation" novalidate>
 
             <section class="row py-4">
 
                 <div class="col-6 col-md-6">
-                    <label class="form-label" for="name">Nome</label class="form-label">
-                    <input type="text" name="name" id="name" class="form-control">
+                    <label class="form-label" for="name">Nome</label>
+                    <input type="text" name="name" id="name" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Digite um nome válido.
+                    </div>
                 </div>
 
                 <div class="col-6 col-md-6">
-                    <label class="form-label" for="last">Sobrenome</label class="form-label">
-                    <input type="text" name="last" id="last" class="form-control">
+                    <label class="form-label" for="last">Sobrenome</label>
+                    <input type="text" name="last" id="last" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Digite um sobrenome válido.
+                    </div>
                 </div>
 
             </section>
@@ -36,68 +42,94 @@
 
             <section class="row">
                 <div class="col col-md-3">
-                    <label class="form-label" for="cep">CEP</label class="form-label">
-                    <input type="text" name="cep" id="cep" class="form-control">
+                    <label class="form-label" for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" class="form-control" required>
+                    <div class="invalid-feedback">
+                        CEP inválido.
+                    </div>
                 </div>
             </section>
 
 
             <section class="row">
                 <div class="col-12 col-md-8">
-                    <label class="form-label" for="street">Endereço</label class="form-label">
-                    <input type="text" name="street" id="street" class="form-control">
+                    <label class="form-label" for="street">Endereço</label>
+                    <input type="text" name="street" id="street" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Digite um endereço válido.
+                    </div>
                 </div>
 
 
 
                 <div class="col col-md-4">
-                    <label class="form-label" for="num">Número</label class="form-label">
-                    <input type="number" name="num" id="num" class="form-control">
+                    <label class="form-label" for="num">Número</label>
+                    <input type="number" name="num" id="num" class="form-control" required>
+                </div>
+                <div class="invalid-feedback">
+                    Digite número válido..
                 </div>
             </section>
 
             <section class="row">
                 <div class="col-12 col-md-6">
-                    <label class="form-label" for="comp">Complemento</label class="form-label">
-                    <input type="text" name="comp" id="comp" class="form-control">
+                    <label class="form-label" for="comp">Complemento</label>
+                    <input type="text" name="comp" id="comp" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Digite um complemento válido.
+                    </div>
                 </div>
 
                 <div class="col col-md-6">
-                    <label class="form-label" for="bairro">Bairro</label class="form-label">
-                    <input type="text" name="bairro" id="bairro" class="form-control">
+                    <label class="form-label" for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Digite um bairro válido.
+                    </div>
                 </div>
             </section>
 
             <section class="row">
 
                 <div class="col-12 col-md-4">
-                    <label class="form-label" for="city">Cidade</label class="form-label">
-                    <input type="text" name="city" id="city" class="form-control">
+                    <label class="form-label" for="city">Cidade</label>
+                    <input type="text" name="city" id="city" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Digite uma Cidade válida.
+                    </div>
+
                 </div>
 
                 <div class="col-6 col-md-4">
-                    <label class="form-label" for="state">Estado</label class="form-label">
-                    <input type="text" name="state" id="state" class="form-control">
+                    <label class="form-label" for="state">Estado</label>
+                    <input type="text" name="state" id="state" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Digite um Estado válido.
+                    </div>
                 </div>
 
                 <div class="col-6 col-md-4">
-                    <label class="form-label" for="country">País</label class="form-label">
-                    <input type="text" name="country" id="country" class="form-control">
+                    <label for="country" class="form-label">País</label>
+                    <input type="text" class="form-control" name="country" id="country" required>
+                    <div class="invalid-feedback">
+                        Digite um País válido.
+                    </div>
                 </div>
 
             </section>
 
             <div class="d-grid gap-2 my-4" role="submit button">
-                <button type="button" class="btn btn-danger">Salvar</button>
+                <button type="submit" class="btn btn-danger">Salvar</button>
             </div>
         </form>
-        
+
     </main>
 
 
     <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="particles-js.js"></script>
+    <script src="particles-js.js"></script>
+    <script src="./src/js/validateform.js"></script>
 </body>
 
 </html>

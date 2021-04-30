@@ -1,4 +1,5 @@
 body{
+  width: 100vw;
     background: rgba(32, 6, 66, 0.925);
     background-image: linear-gradient(
         180deg,
@@ -18,8 +19,8 @@ body{
 }
 
 .container{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   z-index: 10;
   overflow-x: hidden;
@@ -43,6 +44,7 @@ input[type="text"]:focus,  input[type="number"]:focus{
 @media (min-width: 992px) { 
     body{
         height: 100vh;
+        width: 100vw;
     }
  }
 
@@ -62,3 +64,37 @@ input[type="text"]:focus,  input[type="number"]:focus{
   z-index: -10;
 }
 /* Image by Patrick Fore on Unsplash */
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
